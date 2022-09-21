@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecentlyWatchedCollectionViewCell" id="gTV-IL-0wX" customClass="RecentlyWatchedCollectionViewCell" customModule="AutoRuAppPrototype" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="225" height="73"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="225" height="73"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pFo-Fy-VLA">
+                        <rect key="frame" x="20" y="28" width="20.333333333333329" height="20.333333333333329"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WcA-9X-SIZ">
+                        <rect key="frame" x="52.000000000000014" y="41" width="157.33333333333337" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ug-yj-4TK">
+                        <rect key="frame" x="52.333333333333343" y="62" width="90" height="8"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="6"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" systemColor="systemGray6Color"/>
+            <constraints>
+                <constraint firstItem="pFo-Fy-VLA" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.09" id="0ne-fg-MeB"/>
+                <constraint firstItem="pFo-Fy-VLA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="28" id="3B9-vF-Wxp"/>
+                <constraint firstItem="WcA-9X-SIZ" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.7" id="6Gi-Ow-uHH"/>
+                <constraint firstItem="WcA-9X-SIZ" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" constant="-10" id="M6a-LX-y1G"/>
+                <constraint firstItem="pFo-Fy-VLA" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.09" id="bz2-XR-8VQ"/>
+                <constraint firstItem="pFo-Fy-VLA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="eWT-yx-lps"/>
+                <constraint firstItem="9ug-yj-4TK" firstAttribute="leading" secondItem="pFo-Fy-VLA" secondAttribute="trailing" constant="12" id="fBc-mC-fe8"/>
+                <constraint firstItem="9ug-yj-4TK" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.4" id="fjd-Me-iGY"/>
+                <constraint firstItem="9ug-yj-4TK" firstAttribute="top" secondItem="WcA-9X-SIZ" secondAttribute="bottom" constant="3" id="k56-fd-lI8"/>
+                <constraint firstItem="WcA-9X-SIZ" firstAttribute="leading" secondItem="pFo-Fy-VLA" secondAttribute="trailing" constant="11.67" id="kb4-xl-1SG"/>
+            </constraints>
+            <size key="customSize" width="225" height="73"/>
+            <connections>
+                <outlet property="brandLogo" destination="pFo-Fy-VLA" id="Vxu-h4-lNQ"/>
+                <outlet property="carName" destination="WcA-9X-SIZ" id="Ks3-a3-wLf"/>
+                <outlet property="parametersLabel" destination="9ug-yj-4TK" id="Qq8-S8-JAn"/>
+            </connections>
+            <point key="canvasLocation" x="270" y="84.241706161137444"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

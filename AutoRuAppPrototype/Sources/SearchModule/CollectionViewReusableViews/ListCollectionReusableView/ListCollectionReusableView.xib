@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ListCollectionReusableView" id="U6b-Vx-4bR">
+            <rect key="frame" x="0.0" y="0.0" width="392" height="116"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vjE-0o-YJZ" customClass="ListCollectionReusableView" customModule="AutoRuAppPrototype" customModuleProvider="target">
+                    <rect key="frame" x="15" y="0.0" width="362" height="116"/>
+                    <subviews>
+                        <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dpA-Qp-ipc">
+                            <rect key="frame" x="15" y="57.666666666666664" width="332" height="0.6666666666666643"/>
+                            <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="dpA-Qp-ipc" secondAttribute="trailing" constant="15" id="B1E-BR-5VJ"/>
+                        <constraint firstItem="dpA-Qp-ipc" firstAttribute="height" secondItem="vjE-0o-YJZ" secondAttribute="width" multiplier="0.001" id="M1K-sC-4PI"/>
+                        <constraint firstItem="dpA-Qp-ipc" firstAttribute="centerY" secondItem="vjE-0o-YJZ" secondAttribute="centerY" id="V1K-6k-i7j"/>
+                        <constraint firstItem="dpA-Qp-ipc" firstAttribute="leading" secondItem="vjE-0o-YJZ" secondAttribute="leading" constant="15" id="hsf-iS-vUL"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="vjE-0o-YJZ" secondAttribute="bottom" id="5Tb-5L-ZZZ"/>
+                <constraint firstItem="vjE-0o-YJZ" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="15" id="OHQ-rs-Tja"/>
+                <constraint firstItem="vjE-0o-YJZ" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="bFh-Ft-E91"/>
+                <constraint firstItem="vjE-0o-YJZ" firstAttribute="trailing" secondItem="VXr-Tz-HHm" secondAttribute="trailing" constant="-15" id="wgm-SW-l35"/>
+            </constraints>
+            <point key="canvasLocation" x="109.23076923076923" y="44.075829383886251"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
