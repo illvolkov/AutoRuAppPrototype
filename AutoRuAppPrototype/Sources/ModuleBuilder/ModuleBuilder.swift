@@ -27,4 +27,14 @@ class ModuleBuilder {
         
         return UINavigationController(rootViewController: view)
     }
+    
+    static func buildAdsModule() -> UIViewController {
+        let view = AdsController(nibName: "AdsController", bundle: nil)
+        let presenter = AdsPresenter()
+        
+        view.presenter = presenter
+        presenter.delegate = view
+        
+        return UINavigationController(rootViewController: view)
+    }
 }

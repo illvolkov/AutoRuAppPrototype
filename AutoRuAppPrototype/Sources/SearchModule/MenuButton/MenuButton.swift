@@ -18,7 +18,7 @@ class MenuButton: UIButton {
     
     override var isHighlighted: Bool {
         didSet {
-            UIView.animate(withDuration: 0.15, delay: 0, options: [.beginFromCurrentState, .allowUserInteraction]) {
+            UIView.animate(withDuration: 0.1, delay: 0, options: [.beginFromCurrentState, .allowUserInteraction]) {
                 self.alpha = self.isHighlighted ? 0.3 : 1
             }
 

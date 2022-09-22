@@ -13,6 +13,9 @@
 		0442AE9C28DC37CA005DC23C /* FavoritesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0442AE9A28DC37CA005DC23C /* FavoritesController.swift */; };
 		0442AE9D28DC37CA005DC23C /* FavoritesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0442AE9B28DC37CA005DC23C /* FavoritesController.xib */; };
 		0442AEA128DC3809005DC23C /* FavoritesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0442AEA028DC3809005DC23C /* FavoritesPresenter.swift */; };
+		0442AEA728DC4903005DC23C /* AdsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0442AEA528DC4903005DC23C /* AdsController.swift */; };
+		0442AEA828DC4903005DC23C /* AdsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0442AEA628DC4903005DC23C /* AdsController.xib */; };
+		0442AEAA28DC4918005DC23C /* AdsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0442AEA928DC4918005DC23C /* AdsPresenter.swift */; };
 		04810CCF28D9F7190056F930 /* NewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04810CCD28D9F7190056F930 /* NewsCollectionViewCell.swift */; };
 		04810CD028D9F7190056F930 /* NewsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04810CCE28D9F7190056F930 /* NewsCollectionViewCell.xib */; };
 		04810CD528D9FBBD0056F930 /* RecentlyWatchedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04810CD328D9FBBD0056F930 /* RecentlyWatchedCollectionViewCell.swift */; };
@@ -49,6 +52,9 @@
 		0442AE9A28DC37CA005DC23C /* FavoritesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesController.swift; sourceTree = "<group>"; };
 		0442AE9B28DC37CA005DC23C /* FavoritesController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesController.xib; sourceTree = "<group>"; };
 		0442AEA028DC3809005DC23C /* FavoritesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesPresenter.swift; sourceTree = "<group>"; };
+		0442AEA528DC4903005DC23C /* AdsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsController.swift; sourceTree = "<group>"; };
+		0442AEA628DC4903005DC23C /* AdsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdsController.xib; sourceTree = "<group>"; };
+		0442AEA928DC4918005DC23C /* AdsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsPresenter.swift; sourceTree = "<group>"; };
 		04810CCD28D9F7190056F930 /* NewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewCell.swift; sourceTree = "<group>"; };
 		04810CCE28D9F7190056F930 /* NewsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCollectionViewCell.xib; sourceTree = "<group>"; };
 		04810CD328D9FBBD0056F930 /* RecentlyWatchedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyWatchedCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -122,6 +128,32 @@
 			isa = PBXGroup;
 			children = (
 				0442AEA028DC3809005DC23C /* FavoritesPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0442AEA228DC4526005DC23C /* AdsModule */ = {
+			isa = PBXGroup;
+			children = (
+				0442AEA428DC48D9005DC23C /* Presenter */,
+				0442AEA328DC48D4005DC23C /* View */,
+			);
+			path = AdsModule;
+			sourceTree = "<group>";
+		};
+		0442AEA328DC48D4005DC23C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0442AEA528DC4903005DC23C /* AdsController.swift */,
+				0442AEA628DC4903005DC23C /* AdsController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0442AEA428DC48D9005DC23C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0442AEA928DC4918005DC23C /* AdsPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -288,6 +320,7 @@
 				04E1B7D828D52C6300DD11DB /* TabBarController */,
 				04E1B7D128D5080900DD11DB /* SearchModule */,
 				0442AE9528DBA7B2005DC23C /* FavoritesModule */,
+				0442AEA228DC4526005DC23C /* AdsModule */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -397,6 +430,7 @@
 				04810CD628D9FBBD0056F930 /* RecentlyWatchedCollectionViewCell.xib in Resources */,
 				04E1B7C228D5052F00DD11DB /* LaunchScreen.storyboard in Resources */,
 				04E1B7BF28D5052F00DD11DB /* Assets.xcassets in Resources */,
+				0442AEA828DC4903005DC23C /* AdsController.xib in Resources */,
 				04810CD028D9F7190056F930 /* NewsCollectionViewCell.xib in Resources */,
 				0442AE8F28DB9EEE005DC23C /* ListCollectionReusableView.xib in Resources */,
 				0499285528DA1244006E8722 /* SegmentedCollectionViewCell.xib in Resources */,
@@ -414,6 +448,7 @@
 			files = (
 				048D475B28D8E4DB0027A376 /* SegmentedControlViewDelegate.swift in Sources */,
 				048D473D28D873480027A376 /* TabBarController.swift in Sources */,
+				0442AEA728DC4903005DC23C /* AdsController.swift in Sources */,
 				0499285428DA1244006E8722 /* SegmentedCollectionViewCell.swift in Sources */,
 				0499284F28DA0F04006E8722 /* ListCollectionReusableView.swift in Sources */,
 				0442AE9328DB9F41005DC23C /* CarsSectionHeader.swift in Sources */,
@@ -423,6 +458,7 @@
 				04810CCF28D9F7190056F930 /* NewsCollectionViewCell.swift in Sources */,
 				048D474128D873A00027A376 /* SearchController.swift in Sources */,
 				04810CD928DA0A730056F930 /* ListCollectionViewCell.swift in Sources */,
+				0442AEAA28DC4918005DC23C /* AdsPresenter.swift in Sources */,
 				048D475528D8D9200027A376 /* SegmentedControl.swift in Sources */,
 				048D475928D8E23F0027A376 /* SegmentedControlConfiguration.swift in Sources */,
 				048D475228D8B88D0027A376 /* MenuButton.swift in Sources */,
