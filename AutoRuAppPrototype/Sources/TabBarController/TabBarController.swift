@@ -12,6 +12,7 @@ class TabBarController: UITabBarController {
     //MARK: - Module building
     
     private let searchController = ModuleBuilder.buildSearchModule()
+    private let favoritesController = ModuleBuilder.buildFavoritesModule()
     
     //MARK: - Lifecycle
 
@@ -41,7 +42,8 @@ class TabBarController: UITabBarController {
         
     private func setupViewControllers() {
         setViewControllers([
-            generate(viewController: searchController, title: "Поиск", imageName: "searchImage", selectedImageName: "searchImageSelected")
+            generate(viewController: searchController, title: "Поиск", imageName: "searchImage", selectedImageName: "searchImageSelected"),
+            generate(viewController: favoritesController, title: "Избранное", imageName: "favoritesImage", selectedImageName: "favoritesImageSelected")
         ], animated: true)
     }
 

@@ -17,4 +17,14 @@ class ModuleBuilder {
         
         return UINavigationController(rootViewController: view)
     }
+    
+    static func buildFavoritesModule() -> UIViewController {
+        let view = FavoritesController(nibName: "FavoritesController", bundle: nil)
+        let presenter = FavoritesPresenter()
+        
+        view.presenter = presenter
+        presenter.delegate = view
+        
+        return UINavigationController(rootViewController: view)
+    }
 }
