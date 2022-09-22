@@ -50,8 +50,10 @@ class FavoritesController: UIViewController {
     }
     
     private func setupSubviews() {
-        adsLabel.font = .systemFont(ofSize: view.frame.width * 0.06, weight: .semibold)
-        saveAdsLabel.font = .systemFont(ofSize: view.frame.width * 0.04)
+        let viewWidth = view.frame.width
+        
+        adsLabel.font = .systemFont(ofSize: viewWidth * 0.06, weight: .semibold)
+        saveAdsLabel.font = .systemFont(ofSize: viewWidth * 0.04)
         saveAdsLabel.alpha = 0.7
     }
 }

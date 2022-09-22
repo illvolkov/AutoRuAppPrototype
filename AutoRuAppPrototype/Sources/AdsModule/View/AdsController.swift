@@ -19,6 +19,7 @@ class AdsController: UIViewController {
     @IBOutlet weak var addAdsLabel: UILabel!
     @IBOutlet weak var enterPromoCodeButton: UIButton!
     @IBOutlet weak var placeForFreeButton: UIButton!
+    
     //MARK: - Lifecycle
 
     override func viewDidLoad() {
@@ -55,9 +56,9 @@ class AdsController: UIViewController {
         
         sellLabel.font = .systemFont(ofSize: viewWidth * 0.06, weight: .semibold)
         addAdsLabel.font = .systemFont(ofSize: viewWidth * 0.04)
+        addAdsLabel.alpha = 0.7
         enterPromoCodeButton.titleLabel?.font = .systemFont(ofSize: viewWidth * 0.045, weight: .medium)
         placeForFreeButton.titleLabel?.font = .systemFont(ofSize: viewWidth * 0.045, weight: .medium)
-        addAdsLabel.alpha = 0.7
     }
 }
 
