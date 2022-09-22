@@ -16,6 +16,12 @@
 		0442AEA728DC4903005DC23C /* AdsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0442AEA528DC4903005DC23C /* AdsController.swift */; };
 		0442AEA828DC4903005DC23C /* AdsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0442AEA628DC4903005DC23C /* AdsController.xib */; };
 		0442AEAA28DC4918005DC23C /* AdsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0442AEA928DC4918005DC23C /* AdsPresenter.swift */; };
+		0442AEB428DC676B005DC23C /* MessagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0442AEB228DC676B005DC23C /* MessagesController.swift */; };
+		0442AEB528DC676B005DC23C /* MessagesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0442AEB328DC676B005DC23C /* MessagesController.xib */; };
+		0442AEB728DC677D005DC23C /* MessagesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0442AEB628DC677D005DC23C /* MessagesPresenter.swift */; };
+		0442AEB928DC6EA2005DC23C /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0442AEB828DC6EA2005DC23C /* Chat.swift */; };
+		0442AEBD28DC70A0005DC23C /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0442AEBB28DC70A0005DC23C /* ChatTableViewCell.swift */; };
+		0442AEBE28DC70A0005DC23C /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0442AEBC28DC70A0005DC23C /* ChatTableViewCell.xib */; };
 		04810CCF28D9F7190056F930 /* NewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04810CCD28D9F7190056F930 /* NewsCollectionViewCell.swift */; };
 		04810CD028D9F7190056F930 /* NewsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04810CCE28D9F7190056F930 /* NewsCollectionViewCell.xib */; };
 		04810CD528D9FBBD0056F930 /* RecentlyWatchedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04810CD328D9FBBD0056F930 /* RecentlyWatchedCollectionViewCell.swift */; };
@@ -55,6 +61,12 @@
 		0442AEA528DC4903005DC23C /* AdsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsController.swift; sourceTree = "<group>"; };
 		0442AEA628DC4903005DC23C /* AdsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdsController.xib; sourceTree = "<group>"; };
 		0442AEA928DC4918005DC23C /* AdsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsPresenter.swift; sourceTree = "<group>"; };
+		0442AEB228DC676B005DC23C /* MessagesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesController.swift; sourceTree = "<group>"; };
+		0442AEB328DC676B005DC23C /* MessagesController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessagesController.xib; sourceTree = "<group>"; };
+		0442AEB628DC677D005DC23C /* MessagesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesPresenter.swift; sourceTree = "<group>"; };
+		0442AEB828DC6EA2005DC23C /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		0442AEBB28DC70A0005DC23C /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		0442AEBC28DC70A0005DC23C /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
 		04810CCD28D9F7190056F930 /* NewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewCell.swift; sourceTree = "<group>"; };
 		04810CCE28D9F7190056F930 /* NewsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCollectionViewCell.xib; sourceTree = "<group>"; };
 		04810CD328D9FBBD0056F930 /* RecentlyWatchedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyWatchedCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -156,6 +168,51 @@
 				0442AEA928DC4918005DC23C /* AdsPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0442AEAE28DC6734005DC23C /* MessagesModule */ = {
+			isa = PBXGroup;
+			children = (
+				0442AEBA28DC7075005DC23C /* ChatTableViewCell */,
+				0442AEB128DC6750005DC23C /* Model */,
+				0442AEB028DC6747005DC23C /* Presenter */,
+				0442AEAF28DC6740005DC23C /* View */,
+			);
+			path = MessagesModule;
+			sourceTree = "<group>";
+		};
+		0442AEAF28DC6740005DC23C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0442AEB228DC676B005DC23C /* MessagesController.swift */,
+				0442AEB328DC676B005DC23C /* MessagesController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0442AEB028DC6747005DC23C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0442AEB628DC677D005DC23C /* MessagesPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0442AEB128DC6750005DC23C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0442AEB828DC6EA2005DC23C /* Chat.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0442AEBA28DC7075005DC23C /* ChatTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				0442AEBB28DC70A0005DC23C /* ChatTableViewCell.swift */,
+				0442AEBC28DC70A0005DC23C /* ChatTableViewCell.xib */,
+			);
+			path = ChatTableViewCell;
 			sourceTree = "<group>";
 		};
 		04760FDB28DB9D7A0055BEA1 /* ListCollectionReusableView */ = {
@@ -321,6 +378,7 @@
 				04E1B7D128D5080900DD11DB /* SearchModule */,
 				0442AE9528DBA7B2005DC23C /* FavoritesModule */,
 				0442AEA228DC4526005DC23C /* AdsModule */,
+				0442AEAE28DC6734005DC23C /* MessagesModule */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -424,11 +482,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				048D475028D8B8290027A376 /* MenuButton.xib in Resources */,
+				0442AEB528DC676B005DC23C /* MessagesController.xib in Resources */,
 				0499285A28DA1348006E8722 /* CarsCollectionViewCell.xib in Resources */,
 				04810CDA28DA0A730056F930 /* ListCollectionViewCell.xib in Resources */,
 				0442AE9428DB9F41005DC23C /* CarsSectionHeader.xib in Resources */,
 				04810CD628D9FBBD0056F930 /* RecentlyWatchedCollectionViewCell.xib in Resources */,
 				04E1B7C228D5052F00DD11DB /* LaunchScreen.storyboard in Resources */,
+				0442AEBE28DC70A0005DC23C /* ChatTableViewCell.xib in Resources */,
 				04E1B7BF28D5052F00DD11DB /* Assets.xcassets in Resources */,
 				0442AEA828DC4903005DC23C /* AdsController.xib in Resources */,
 				04810CD028D9F7190056F930 /* NewsCollectionViewCell.xib in Resources */,
@@ -449,6 +509,7 @@
 				048D475B28D8E4DB0027A376 /* SegmentedControlViewDelegate.swift in Sources */,
 				048D473D28D873480027A376 /* TabBarController.swift in Sources */,
 				0442AEA728DC4903005DC23C /* AdsController.swift in Sources */,
+				0442AEBD28DC70A0005DC23C /* ChatTableViewCell.swift in Sources */,
 				0499285428DA1244006E8722 /* SegmentedCollectionViewCell.swift in Sources */,
 				0499284F28DA0F04006E8722 /* ListCollectionReusableView.swift in Sources */,
 				0442AE9328DB9F41005DC23C /* CarsSectionHeader.swift in Sources */,
@@ -459,6 +520,7 @@
 				048D474128D873A00027A376 /* SearchController.swift in Sources */,
 				04810CD928DA0A730056F930 /* ListCollectionViewCell.swift in Sources */,
 				0442AEAA28DC4918005DC23C /* AdsPresenter.swift in Sources */,
+				0442AEB928DC6EA2005DC23C /* Chat.swift in Sources */,
 				048D475528D8D9200027A376 /* SegmentedControl.swift in Sources */,
 				048D475928D8E23F0027A376 /* SegmentedControlConfiguration.swift in Sources */,
 				048D475228D8B88D0027A376 /* MenuButton.swift in Sources */,
@@ -466,9 +528,11 @@
 				04C20D4B28D9C87F0039C32E /* Transport.swift in Sources */,
 				04E1B7B628D5052D00DD11DB /* AppDelegate.swift in Sources */,
 				048D474728D8A8420027A376 /* ModuleBuilder.swift in Sources */,
+				0442AEB728DC677D005DC23C /* MessagesPresenter.swift in Sources */,
 				04C20D4F28D9C91A0039C32E /* SectionType.swift in Sources */,
 				0499285928DA1348006E8722 /* CarsCollectionViewCell.swift in Sources */,
 				0442AEA128DC3809005DC23C /* FavoritesPresenter.swift in Sources */,
+				0442AEB428DC676B005DC23C /* MessagesController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
