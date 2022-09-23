@@ -49,6 +49,7 @@ class MessagesController: UIViewController {
         
         let appearance = UINavigationBarAppearance()
         appearance.backgroundColor = .white
+        appearance.shadowColor = .clear
         navigationController?.navigationBar.standardAppearance = appearance
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
     }

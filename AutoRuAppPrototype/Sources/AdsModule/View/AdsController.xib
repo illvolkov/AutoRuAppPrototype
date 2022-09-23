@@ -68,8 +68,6 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="48k-63-ntW" firstAttribute="top" secondItem="zoZ-0A-3Me" secondAttribute="bottom" constant="8" symbolic="YES" id="4C2-Se-Sy4"/>
-                <constraint firstItem="48k-63-ntW" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.917949" id="4dx-dz-maw"/>
-                <constraint firstItem="zoZ-0A-3Me" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.917949" id="92P-36-c5I"/>
                 <constraint firstItem="eyF-xC-Acl" firstAttribute="top" secondItem="Jzt-Un-pw6" secondAttribute="bottom" constant="25" id="D8K-gc-77Z"/>
                 <constraint firstItem="48k-63-ntW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="FUG-8K-JTw"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zoZ-0A-3Me" secondAttribute="trailing" constant="16" id="GNZ-dJ-iPR"/>

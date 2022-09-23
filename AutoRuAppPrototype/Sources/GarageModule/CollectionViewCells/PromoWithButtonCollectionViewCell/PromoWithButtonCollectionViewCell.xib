@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PromoWithButtonCollectionViewCell" customModule="AutoRuAppPrototype" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="372"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="321" height="372"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fxh-RI-6iS">
+                        <rect key="frame" x="0.0" y="0.0" width="321" height="208.66666666666666"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSg-nG-24i">
+                        <rect key="frame" x="15" y="234.66666666666666" width="291" height="20.333333333333343"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bh-10-nP6">
+                        <rect key="frame" x="15" y="264" width="291" height="20.333333333333314"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sg5-Ia-zjs">
+                        <rect key="frame" x="15" y="299" width="291" height="48"/>
+                        <color key="backgroundColor" red="0.0" green="0.40650799520000003" blue="0.84277752189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Поставить в гараж"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Fxh-RI-6iS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="27x-ce-jve"/>
+                <constraint firstAttribute="trailing" secondItem="vSg-nG-24i" secondAttribute="trailing" constant="15" id="8Fb-29-Rct"/>
+                <constraint firstAttribute="trailing" secondItem="Sg5-Ia-zjs" secondAttribute="trailing" constant="15" id="DZh-Mu-wfs"/>
+                <constraint firstItem="Fxh-RI-6iS" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.65" id="Fv5-rO-GFk"/>
+                <constraint firstAttribute="trailing" secondItem="8bh-10-nP6" secondAttribute="trailing" constant="15" id="G1M-YK-jrb"/>
+                <constraint firstItem="vSg-nG-24i" firstAttribute="top" secondItem="Fxh-RI-6iS" secondAttribute="bottom" constant="26" id="IOx-mm-ly1"/>
+                <constraint firstItem="8bh-10-nP6" firstAttribute="top" secondItem="vSg-nG-24i" secondAttribute="bottom" constant="9" id="Jig-tL-HWs"/>
+                <constraint firstAttribute="trailing" secondItem="Fxh-RI-6iS" secondAttribute="trailing" id="NFW-1c-PW2"/>
+                <constraint firstItem="Fxh-RI-6iS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Ndb-bL-Z4u"/>
+                <constraint firstItem="8bh-10-nP6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="VYV-qQ-2Gu"/>
+                <constraint firstItem="Fxh-RI-6iS" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="byf-1b-JZ6"/>
+                <constraint firstItem="Sg5-Ia-zjs" firstAttribute="top" secondItem="8bh-10-nP6" secondAttribute="bottom" constant="14.67" id="cXu-AQ-tan"/>
+                <constraint firstItem="Sg5-Ia-zjs" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.15" id="chN-ER-B3p"/>
+                <constraint firstItem="vSg-nG-24i" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="dhm-kE-q7n"/>
+                <constraint firstItem="Sg5-Ia-zjs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="i91-vQ-mlc"/>
+            </constraints>
+            <size key="customSize" width="321" height="372"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="35"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="promoImage" destination="Fxh-RI-6iS" id="AsB-Uy-SY9"/>
+                <outlet property="putInGarageButton" destination="Sg5-Ia-zjs" id="ugC-TV-yg3"/>
+                <outlet property="subTitleLabel" destination="8bh-10-nP6" id="R9G-OE-mqO"/>
+                <outlet property="titleLabel" destination="vSg-nG-24i" id="6ka-vO-S8U"/>
+            </connections>
+            <point key="canvasLocation" x="336.15384615384613" y="148.5781990521327"/>
+        </collectionViewCell>
+    </objects>
+</document>
