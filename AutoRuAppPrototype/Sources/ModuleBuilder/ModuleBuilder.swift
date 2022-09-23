@@ -37,4 +37,24 @@ class ModuleBuilder {
         
         return UINavigationController(rootViewController: view)
     }
+    
+    static func buildMessagesModule() -> UIViewController {
+        let view = MessagesController(nibName: "MessagesController", bundle: nil)
+        let presenter = MessagesPresenter()
+        
+        view.presenter = presenter
+        presenter.delegate = view
+        
+        return UINavigationController(rootViewController: view)
+    }
+    
+    static func buildGarageModule() -> UIViewController {
+        let view = GarageController(nibName: "GarageController", bundle: nil)
+        let presenter = GaragePresenter()
+        
+        view.presenter = presenter
+        presenter.delegate = view
+        
+        return UINavigationController(rootViewController: view)
+    }
 }
