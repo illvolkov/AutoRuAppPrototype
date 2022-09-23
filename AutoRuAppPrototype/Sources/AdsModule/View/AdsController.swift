@@ -1,5 +1,5 @@
 //
-//  FavoritesController.swift
+//  AdsController.swift
 //  AutoRuAppPrototype
 //
 //  Created by Ilya Volkov on 22.09.2022.
@@ -7,16 +7,18 @@
 
 import UIKit
 
-class FavoritesController: UIViewController {
+class AdsController: UIViewController {
     
     //MARK: - References
     
-    var presenter: FavoritesPresenter?
+    var presenter: AdsPresenter?
     
     //MARK: - Views
-    
-    @IBOutlet weak var adsLabel: UILabel!
-    @IBOutlet weak var saveAdsLabel: UILabel!
+
+    @IBOutlet weak var sellLabel: UILabel!
+    @IBOutlet weak var addAdsLabel: UILabel!
+    @IBOutlet weak var enterPromoCodeButton: UIButton!
+    @IBOutlet weak var placeForFreeButton: UIButton!
     
     //MARK: - Lifecycle
 
@@ -36,13 +38,13 @@ class FavoritesController: UIViewController {
     //MARK: - Settings
     
     private func setupNavigationBar() {
-        title = "Избранное"
+        navigationItem.title = "Объявления"
         navigationController?.navigationBar.prefersLargeTitles = true
         
         let menuButton = MenuButton().getButton()
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: menuButton)
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "square.and.arrow.up")?.withTintColor(.black,
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "person.crop.circle")?.withTintColor(.black,
                                                                                                                              renderingMode: .alwaysOriginal),
                                                             style: .plain,
                                                             target: nil,
@@ -52,12 +54,12 @@ class FavoritesController: UIViewController {
     private func setupSubviews() {
         let viewWidth = view.frame.width
         
-        adsLabel.font = .systemFont(ofSize: viewWidth * 0.06, weight: .semibold)
-        saveAdsLabel.font = .systemFont(ofSize: viewWidth * 0.04)
-        saveAdsLabel.alpha = 0.7
+        sellLabel.font = .systemFont(ofSize: viewWidth * 0.06, weight: .semibold)
+        addAdsLabel.font = .systemFont(ofSize: viewWidth * 0.04)
+        addAdsLabel.alpha = 0.7
+        enterPromoCodeButton.titleLabel?.font = .systemFont(ofSize: viewWidth * 0.045, weight: .medium)
+        placeForFreeButton.titleLabel?.font = .systemFont(ofSize: viewWidth * 0.045, weight: .medium)
     }
 }
 
-//MARK: - FavoritesPresenterDelegate methods
-
-extension FavoritesController: FavoritesPresenterDelegate {}
+extension AdsController: AdsPresenterDelegate {}

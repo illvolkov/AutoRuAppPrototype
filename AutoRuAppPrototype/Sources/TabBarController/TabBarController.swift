@@ -13,6 +13,9 @@ class TabBarController: UITabBarController {
     
     private let searchController = ModuleBuilder.buildSearchModule()
     private let favoritesController = ModuleBuilder.buildFavoritesModule()
+    private let adsController = ModuleBuilder.buildAdsModule()
+    private let messagesController = ModuleBuilder.buildMessagesModule()
+    private let garageController = ModuleBuilder.buildGarageModule()
     
     //MARK: - Lifecycle
 
@@ -43,7 +46,10 @@ class TabBarController: UITabBarController {
     private func setupViewControllers() {
         setViewControllers([
             generate(viewController: searchController, title: "Поиск", imageName: "searchImage", selectedImageName: "searchImageSelected"),
-            generate(viewController: favoritesController, title: "Избранное", imageName: "favoritesImage", selectedImageName: "favoritesImageSelected")
+            generate(viewController: favoritesController, title: "Избранное", imageName: "favoritesImage", selectedImageName: "favoritesImageSelected"),
+            generate(viewController: adsController, title: "Разместить", imageName: "adsImage", selectedImageName: "adsImageSelected"),
+            generate(viewController: messagesController, title: "Сообщения", imageName: "messagesImage", selectedImageName: "messagesImageSelected"),
+            generate(viewController: garageController, title: "Гараж", imageName: "garageImage", selectedImageName: "garageImageSelected")
         ], animated: true)
     }
 
